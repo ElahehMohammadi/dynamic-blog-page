@@ -1,0 +1,126 @@
+.main-content__side-bar {
+  position: relative;
+
+  .side-bar {
+
+    @include flexbox($flex-direction: column,
+    $justify-content: flex-start,
+    $gap: 1rem);
+
+    &__content-table,
+    &__action-btn {
+      gap: 1.25rem;
+      border-radius: 1rem;
+      border: 2px solid $gray-light;
+    }
+
+    &__action-btn {
+      padding: 1.25rem;
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    &__content-table {
+      max-height: 18.75rem;
+      padding-left: 2px;
+      @include flexbox($flex-direction: column,
+      $align-items: stretch);
+
+      &--heading {
+        padding: 1.25rem 1.25rem 0 1.125rem;
+
+        @include flexbox($align-items: center,
+        $gap: 0.5rem);
+
+        .h6 {
+          margin: 0;
+        }
+      }
+
+      &--content {
+        padding: 0 1.25rem 1.25rem 1.125rem;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+
+        //chrome and safari
+        &::-webkit-scrollbar {
+          width: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: $gray-medium;
+          border-radius: 0.75rem !important;
+          background-clip: padding-box;
+
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: transparent;
+          border-radius: 1.5rem 0 0 1.5rem !important;
+          margin-bottom: 100px;
+        }
+
+        .nav {
+
+          flex-grow: 1;
+
+          @include flexbox($flex-direction: column,
+          $justify-content: flex-start,
+          $gap: 0.25rem);
+
+          .title {
+            width: 100%;
+
+            @include flexbox($flex-direction: row,
+            $align-items: center,
+            $gap: 0.75rem);
+            padding: 0.75rem;
+            border-radius: 0.625rem;
+
+            &.active {
+              background-color: $gray-lighter !important;
+            }
+          }
+        }
+      }
+    }
+
+    &__action-btn {
+      padding: 1rem 1.25rem;
+
+      &--comment {
+
+        @include flexbox(
+          $align-items: center,
+          $gap: 0.5rem);
+        border-radius: 0.625rem;
+        //padding: 0.625rem 0.75rem 0.625rem 1rem;
+
+        &:hover {
+          background-color: $gray-light;
+        }
+      }
+
+      &--save-btn {
+
+        @include flexbox(
+          $align-items: center,
+          $gap: 1rem);
+
+        .btn {
+          padding: 0;
+        }
+      }
+    }
+
+
+  }
+
+  .sticky-top {
+    top: 10vh !important;
+  }
+}
+
+
+

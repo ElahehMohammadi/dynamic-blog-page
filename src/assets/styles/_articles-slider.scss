@@ -1,0 +1,65 @@
+.recommended-articles {
+  background: linear-gradient(
+                  180deg,
+                  rgba(228, 225, 243, 0.1) 0%,
+                  rgba(228, 225, 243, 0.8) 50%,
+                  rgba(228, 225, 243, 0.1) 100%
+  );
+
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    flex-shrink: 1;
+  }
+
+  .swiper-nav-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-shrink: 1;
+  }
+
+  .swiper-pagination-bullets {
+
+    position: static;
+    width: auto !important;
+    display: flex;
+    gap: 12px;
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: #c4c2cc;
+      opacity: 1;
+      margin: 0 !important;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+    padding: 10px;
+    border-radius: 10px;
+    border: none !important;
+
+    &:hover {
+      background-color: $gray-light;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $secondary-2 !important;
+  }
+}

@@ -1,0 +1,59 @@
+.author-card__section {
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.author-card {
+  border: 2px solid;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  @include flexbox($align-items: center, $gap: $space-20px);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  &__avatar {
+    border-radius: 12px;
+    border: 1px solid #e6e6e6;
+    width: 145px;
+    height: 145px;
+  }
+
+  &__content {
+    flex-grow: 1;
+    @include flexbox($flex-direction: column, $justify-content: space-between, $align-items: flex-end, $gap: $space-20px);
+  }
+
+  &__info {
+
+    @include flexbox($flex-direction: column, $gap: .5rem);
+
+
+    &--name {
+
+      @include flexbox($align-items: center, $gap: 0.25rem);
+
+    }
+
+    &--describe {
+      .sub1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        @media (max-width: 768px) {
+          -webkit-line-clamp: 3;
+        }
+      }
+    }
+  }
+
+  &__button {
+    width: fit-content;
+  }
+}

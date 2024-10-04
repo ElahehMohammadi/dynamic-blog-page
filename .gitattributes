@@ -1,0 +1,11 @@
+# Enforce LF line endings for JavaScript and Vue files
+*.js text eol=lf
+*.vue text eol=lf
+
+# You can also add other file types if needed
+*.css text eol=lf
+*.html text eol=lf
+
+# Handle other files if necessary, like Markdown or JSON
+*.json text eol=lf
+*.md text eol=lf

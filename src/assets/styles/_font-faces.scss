@@ -1,0 +1,72 @@
+//Importing TheFooter.vue fonts
+//IranSansX
+
+@font-face {
+  font-family: "IranSansX";
+  src: url("@/assets/styles/fonts/IranSansX/Woff2/IRANSansXFaNum-Black.woff2") format("woff2"),
+  url("@/assets/styles/fonts/IranSansX/Woff/IRANSansXFaNum-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IranSansX";
+  src: url("@/assets/styles/fonts/IranSansX/Woff2/IRANSansXFaNum-Bold.woff2") format("woff2"),
+  url("@/assets/styles/fonts/IranSansX/Woff/IRANSansXFaNum-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+@font-face {
+  font-family: "IranSansX";
+  src: url("@/assets/styles/fonts/IranSansX/Woff2/IRANSansXFaNum-Medium.woff2") format("woff2"),
+  url("@/assets/styles/fonts/IranSansX/Woff/IRANSansXFaNum-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IranSansX";
+  src: url("@/assets/styles/fonts/IranSansX/Woff2/IRANSansXFaNum-Regular.woff2") format("woff2"),
+  url("@/assets/styles/fonts/IranSansX/Woff/IRANSansXFaNum-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+//IranYekanX
+
+@font-face {
+  font-family: "IranYekanX";
+  src: url("@/assets/styles/fonts/IranYekanX/Woff2/IRANYekanXFaNum-Black.woff2") format("woff2"),
+  url("@/assets/styles/fonts/IranYekanX/Woff/IRANYekanXFaNum-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IranYekanX";
+  src: url("@/assets/styles/fonts/IranYekanX/Woff2/IRANYekanXFaNum-ExtraBold.woff2") format("woff2"),
+  url("@/assets/styles/fonts/IranYekanX/Woff/IRANYekanXFaNum-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IranYekanX";
+  src: url("@/assets/styles/fonts/IranYekanX/Woff2/IRANYekanXFaNum-Heavy.woff2") format("woff2"),
+  url("@/assets/styles/fonts/IranYekanX/Woff/IRANYekanXFaNum-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

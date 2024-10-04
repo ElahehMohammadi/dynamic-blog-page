@@ -1,0 +1,49 @@
+.comments-section {
+  &__container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @include flexbox($flex-direction: column,
+    $gap: 3rem)
+  }
+
+  &__body {
+    border: 2px solid #e6e6e6;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    @include flexbox($flex-direction: column,
+    $align-items: flex-end,
+    $gap: 1.25rem);
+
+    &__text {
+      @include flexbox($flex-direction: column,
+      $gap: 1.25rem);
+
+      &--title {
+
+        @include flexbox(
+                $align-items: center,
+                $gap: 1rem)
+      }
+
+      &--input {
+        .form-control {
+          border-radius: 1rem;
+          background-color: $gray-lighter;
+          padding: 1rem 1rem 0.75rem 1rem;
+          border: none;
+          color: $gray-dark;
+
+          &:focus {
+            box-shadow: none;
+            border: none;
+          }
+        }
+
+        .validate {
+          padding: 1rem 1rem 0 1rem;
+        }
+      }
+    }
+  }
+}

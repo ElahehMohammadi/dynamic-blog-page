@@ -1,0 +1,104 @@
+
+.card, .card * {
+  margin: 0;
+  padding: 0;
+}
+
+
+.card {
+  @media (min-width: 768px) {
+    flex: 1;
+  }
+  margin: 0 auto;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: $radius-20px;
+  border: 2px solid $gray-light;
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+
+  }
+
+  .card-body {
+    padding: $card-body-padding;
+    width: 100%;
+    height: 100%;
+    bottom: -55%;
+    position: absolute;
+    background-color: $card-body-color;
+    border-radius: $radius-20px;
+    transition: all 0.5s;
+    @include flexbox($flex-direction: column, $justify-content: space-between, $align-items: flex-start, $gap: $space-20px);
+
+
+    .card-text {
+      @include flexbox($flex-direction: column, $gap: $space-20px);
+      flex-grow: 1;
+
+
+      .card-title {
+        height: 55%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+
+      }
+
+      &--avatar {
+        @include flexbox(
+                $flex-direction: row,
+                $align-items: center,
+                $align-content: center,
+                $gap: 4px
+        );
+
+        img {
+          border-radius: 6px;
+          border: 1px solid $gray-light;
+        }
+
+      }
+    }
+
+    &--metadata {
+      @include flexbox($flex-direction: row, $justify-content: space-between);
+      @include make-col(12);
+
+      .card-info {
+        @include flexbox(
+                $flex-direction: row,
+                $align-items: center,
+                $gap: 1rem
+        );
+
+        &__group {
+          @include flexbox(
+                  $flex-direction: row,
+                  $align-items: center,
+                  $gap: $space-8px
+          );
+
+        }
+      }
+    }
+
+  }
+
+  &:hover {
+    .card-body {
+      padding: $space-20px;
+      bottom: 0;
+      border-radius: $radius-16px;
+    }
+
+  }
+
+}
+
+
+
